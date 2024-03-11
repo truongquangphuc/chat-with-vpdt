@@ -33,7 +33,7 @@ data_van_ban_di = {
         'nam': '2024',
         'page': '1',
         'size': '5',
-        'token': '8423494c9f5965bd44905b027a75f706',
+        'token': st.secrets["API_TOKEN"],
         'tu_khoa': 'số',
         'tu_ngay': '21/01/2024',
     }
@@ -75,7 +75,7 @@ def embedding():
             Settings.embed_model = embed_model
                     
             parser = LlamaParse(
-                api_key="llx-lvCVaeyLE4mdQ8mayBSvU2IyK2vjpkKn3dnkAjAEK1lEDNPm",  # can also be set in your env as LLAMA_CLOUD_API_KEY
+                api_key=st.secrets["LLAMA_CLOUD_API_KEY"] ,  # can also be set in your env as LLAMA_CLOUD_API_KEY
                 result_type="text",  # "markdown" and "text" are available
                 verbose=True,
             )
