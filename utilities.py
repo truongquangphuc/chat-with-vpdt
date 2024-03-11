@@ -1,12 +1,12 @@
 import os
 import ssl
 import requests
-import nest_asyncio
+#import nest_asyncio
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.poolmanager import PoolManager
 
 
-nest_asyncio.apply()
+#nest_asyncio.apply()
 
 class SSLAdapter(HTTPAdapter):
     '''An HTTPAdapter that uses an SSL context with custom ciphers.'''
