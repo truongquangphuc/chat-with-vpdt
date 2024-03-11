@@ -19,9 +19,9 @@ session = setup_session()
 DATA_DIR = './data'
 PERSIST_DIR = './storage'
 # Set API keys and other configuration as environment variables
-os.environ["LLAMA_CLOUD_API_KEY"] = st.secrets["LLAMA_CLOUD_API_KEY"] #"llx-lvCVaeyLE4mdQ8mayBSvU2IyK2vjpkKn3dnkAjAEK1lEDNPm"
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"] #"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"
-token = os.getenv('API_TOKEN', st.secrets["API_TOKEN"]) #'8423494c9f5965bd44905b027a75f706')
+os.environ["LLAMA_CLOUD_API_KEY"] = st.secrets["LLAMA_CLOUD_API_KEY"] 
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"] 
+token = os.getenv('API_TOKEN', st.secrets["API_TOKEN"]) 
 ma_don_vi = '0'
 url_loai_van_ban = 'https://angiang-api.vnptioffice.vn/api/danh-muc/danh-sach-loai-van-ban-no-authen'
 url_co_quan = 'https://angiang-api.vnptioffice.vn/api/can-bo/ds-dv-by-chuoi-loai-don-vi'
